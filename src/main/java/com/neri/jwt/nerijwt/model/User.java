@@ -1,6 +1,5 @@
 package com.neri.jwt.nerijwt.model;
 
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -16,6 +15,7 @@ public class User {
     private  String email;
     private  String name;
     private  String password;
+
 
     public String getId() {
         return id;
@@ -47,13 +47,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public ProfileEnum getProfile() {
-        return profile;
-    }
-
-    public void setProfile(ProfileEnum profile) {
-        this.profile = profile;
     }
 }
